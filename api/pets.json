@@ -1,0 +1,17 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Luna",
+      "type": "Cat",
+      "age": 2,
+      "breed": "British Shorthair",
+      "status": "Available",
+      "description": "Friendly and playful",
+      "image": "Luna.jpg",
+      "health_status": "Vaccinated",
+      "special_needs": false
+    },
+    // ... 其他宠物数据 ...
+  ]
+} 
