@@ -6,6 +6,7 @@
     "start": "serve public"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "serve": "^14.0.0"
   }
 }
