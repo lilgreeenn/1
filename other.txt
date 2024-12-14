@@ -1,0 +1,54 @@
+
+import express from 'express';
+
+console.log("change")
+
+
+const app = express();
+
+
+const port = process.env.PORT || 3001
+
+const fruits = {
+  banana: {
+      color: "yellow"
+  }, 
+  orange: {
+      color: "orange"
+  }, 
+  apple: {
+      color: "green"
+  }, 
+  pear: {
+      color: "green"
+  }
+}
+
+app.get('/', (req, res) => {
+  const requestedColor = req.query.color;
+  const matchingFruits = [];
+
+
+  for(const fruit in fruits){
+    if(fruit == req.params.fruit){
+      console.log(`the color og this gruit is ${fruits[fruit].color}`)
+    }
+    // if(fruits[fruit].color == requestedColor){
+    //   matchingFruits.push(fruit)
+    // }
+  }
+
+      console.log(fruit)//右边
+      res.send(matchingFruits)//左边 client
+  })
+  
+  // }
+  //   console.log(req.query)
+  //   res.send(`Your value was ${req.query.color}`)
+    // res.send("Welcome")
+
+
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}` )
+  })
+  
