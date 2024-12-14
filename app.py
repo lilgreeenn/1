@@ -1,19 +1,28 @@
 from flask import Flask, jsonify
 import os
+import json
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # 启用CORS
 
-# 添加一个基础路由
+# 加载JSON数据
+def load_data():
+    with open('data.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({"message": "API is working!"})
+    return jsonify({"message": "API is running"})
 
-# 假设这是您的API端点示例
-@app.route('/api/example', methods=['GET'])
-def example():
-    return jsonify({"data": "This is an example API response"})
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    try:
+        data = load_data()
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
-# Render会提供PORT环境变量
 port = int(os.environ.get("PORT", 5000))
 
 if __name__ == "__main__":
