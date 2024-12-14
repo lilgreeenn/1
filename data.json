@@ -1,4 +1,88 @@
 {
-  "message": "Hello, Render!",
-  "status": "success"
+  "pets": [
+    {
+      "id": 1,
+      "name": "Luna",
+      "type": "Cat",
+      "age": 2,
+      "breed": "British Shorthair",
+      "status": "Available",
+      "description": "Friendly and playful",
+      "image": "Luna.jpg",
+      "health_status": "Vaccinated",
+      "special_needs": false
+    },
+    {
+      "id": 2,
+      "name": "Max",
+      "type": "Dog",
+      "age": 3,
+      "breed": "Golden Retriever",
+      "status": "Available",
+      "description": "Loving and well-trained",
+      "image": "Max.jpg",
+      "health_status": "Vaccinated",
+      "special_needs": false
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "type": "Dog",
+      "age": 1,
+      "breed": "French Bulldog",
+      "status": "Available",
+      "description": "Energetic puppy, loves to play with toys",
+        "image": "Charlie.jpg",
+      "health_status": "Vaccinated",
+      "special_needs": false
+    },
+    {
+      "id": 4,
+      "name": "Oliver",
+      "type": "Cat",
+      "age": 5,
+      "breed": "Persian",
+      "status": "Available",
+      "description": "Calm and gentle, enjoys quiet environments",
+      "image": "Oliver.jpg",
+      "health_status": "Vaccinated, Regular grooming needed",
+      "special_needs": true
+    },
+    {
+      "id": 5,
+      "name": "Buddy",
+      "type": "Dog",
+      "age": 4,
+      "breed": "Labrador Retriever",
+      "status": "Available",
+      "description": "Great with kids, trained therapy dog",
+      "image": "Buddy.jpg",
+      "health_status": "Vaccinated, Hip checked",
+      "special_needs": false
+    },
+    {
+      "id": 6,
+      "name": "Milo",
+      "type": "Rabbit",
+      "age": 1,
+      "breed": "Holland Lop",
+      "status": "Available",
+      "description": "Sweet and gentle, perfect for first-time pet owners",
+      "image": "Milo.jpg",
+      "health_status": "Vaccinated, Neutered",
+      "special_needs": false
+    },
+    {
+      "id": 7,
+      "name": "Rocky",
+      "type": "Dog",
+      "age": 6,
+      "breed": "German Shepherd",
+      "status": "Available",
+      "description": "Loyal and protective, needs experienced owner",
+      "image": "Rocky.jpg",
+      "health_status": "Vaccinated, Some arthritis",
+      "special_needs": true
+    }
+  ]
 }
