@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: pet-api
+    name: static-json-api
     env: static
-    buildCommand: ""
-    staticPublishPath: .
+    buildCommand: npm install
+    staticPublishPath: ./
     routes:
       - type: rewrite
         source: /*

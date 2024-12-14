@@ -1,22 +1,11 @@
 {
-  "name": "pet-adoption-api",
+  "name": "static-json-api",
   "version": "1.0.0",
-  "description": "Pet adoption API service",
-  "main": "index.js",
-  "type": "module",
+  "description": "Static JSON API website",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "serve public"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "engines": {
-    "node": ">=14.0.0"
+    "serve": "^14.0.0"
   }
 }
